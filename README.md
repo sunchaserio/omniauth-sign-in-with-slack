@@ -22,7 +22,7 @@ Follow the [Slack instructions to create a Slack App][5]. After that, browse to 
 If you are using Omniauth with [Devise][devise], add these lines to your `devise.rb` configuration file:
 
 ```ruby
-config.omniauth :sign_in_with_slack, ENV["SLACK_CLIENT_ID"], ENV["SLACK_CLIENT_SECRET"]
+config.omniauth :slack, ENV["SLACK_CLIENT_ID"], ENV["SLACK_CLIENT_SECRET"]
 ```
 
 [devise]: https://github.com/heartcombo/devise
@@ -33,7 +33,7 @@ If you are using Omniauth directly, your configuration will look something like 
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :sign_in_with_slack, ENV["SLACK_CLIENT_ID"], ENV["SLACK_CLIENT_SECRET"]
+  provider :slack, ENV["SLACK_CLIENT_ID"], ENV["SLACK_CLIENT_SECRET"]
 end
 ```
 
