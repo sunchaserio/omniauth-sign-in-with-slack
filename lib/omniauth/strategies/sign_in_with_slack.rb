@@ -5,7 +5,7 @@ module OmniAuth
     class SignInWithSlack < OmniAuth::Strategies::OpenIDConnect
       args %i[client_id client_secret]
 
-      option :name, "slack"
+      option :name, "sign_in_with_slack"
       option :issuer, "https://slack.com"
       option :discovery, true
       option :scope, %w[openid email profile]
