@@ -6,7 +6,7 @@ An [Omniauth][1] plugin for [the new Sign in With Slack flow][2], which is based
 
 First, you need to already have [Omniauth][1] installed and set up in your application.
 
-Then, run `bundle add omniauth-sign_in_with_slack`.
+Then, run `bundle add omniauth-sign-in-with-slack`.
 
 [1]: https://github.com/omniauth/omniauth
 [2]: https://api.slack.com/authentication/sign-in-with-slack
