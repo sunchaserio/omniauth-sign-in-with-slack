@@ -9,6 +9,7 @@ module OmniAuth
       option :issuer, "https://slack.com"
       option :discovery, true
       option :scope, %w[openid email profile]
+      option :allow_authorize_params, %w[team]
 
       def initialize(*args, &block)
         super
