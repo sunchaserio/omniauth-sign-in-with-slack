@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name = "omniauth-sign-in-with-slack"
-  spec.version = "1.0.0"
+  spec.version = "1.1.0"
   spec.authors = ["Andre Arko"]
   spec.email = ["andre@arko.net"]
 
